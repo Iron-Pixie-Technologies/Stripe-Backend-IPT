@@ -26,7 +26,7 @@ public class NotComplexController{
     @RequestMapping(value = "/email", method = RequestMethod.POST)
     public HashMap<String, String> EmailTest(@RequestBody HashMap<String, String> jsonEmail)
     {
-        
+
         try {
             EmailService emailService = new EmailService();
             emailService.sendMailAccess(jsonEmail.get("Subject"), jsonEmail.get("Message"));
