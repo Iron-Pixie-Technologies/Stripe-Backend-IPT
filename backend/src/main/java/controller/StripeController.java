@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 @RestController
 public class StripeController{
+
     @CrossOrigin(origins = "*")
     @RequestMapping(value = "/stripe-test", method = RequestMethod.POST)
     public  HashMap<String, String>  testStripeApiKey(@RequestBody HashMap<String, String> request)
